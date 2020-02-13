@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "typeRoots": [
+            "./node_modules/@types",
+            "./typings"
+        ],
+        "baseUrl": "./",
+        "sourceMap": true,
+        "declaration": true,
+        "noImplicitAny": true,
+        "noUnusedLocals": true,
+        "noEmitOnError": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowSyntheticDefaultImports": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "target": "es6",
+        "jsx": "react",
+        "lib": [
+            "es5",
+            "es6",
+            "dom"
+        ],
+        "paths": {
+            "Common/*": ["src/common/*"],
+            "Core/*": ["src/core/*"],
+            "Assets/*": ["src/assets/*"],
+            "Components/*": ["src/components/*"],
+            "RootState": ["src/root-state.ts"],
+            "AppConstant": ["src/app-constant.ts"],
+            "Template": ["src/template.ts"],
+            "ServerRender": ["src/server/server.tsx"],
+            "RoutesConstant": ["src/routes-constant.ts"]
+        }
+    },
+    "include": [
+        "./src/**/*",
+        "./ssr/**/*",
+        "./typings/**/*.d.ts",
+        "./"
+    ],
+    "exclude": ["node_modules", "dist"]
+}

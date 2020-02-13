@@ -1,0 +1,29 @@
+{
+    "extends": [
+        "tslint:latest",
+        "tslint-react"
+    ],
+    "rules": {
+        "jsx-wrap-multiline": true,
+        "semicolon": true,
+        "max-line-length": {
+            "options": {
+                "limit": 180
+            }
+        },
+        "ordered-imports": false,
+        "no-trailing-whitespace": true,
+        "jsx-self-close": false,
+        "jsx-no-lambda": false,
+        "interface-name": false,
+        "trailing-comma": false,
+        "object-literal-sort-keys": false,
+        "no-empty-interface": false,
+        "no-implicit-dependencies": false,
+        "no-submodule-imports": false,
+        "jsx-no-multiline-js": false,
+        "indent": [
+            true
+        ]
+    }
+}
